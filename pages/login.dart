@@ -113,17 +113,18 @@ class _LogInState extends State<LogIn> {
       backgroundColor: const Color(0xFF283793),
       body: SingleChildScrollView(
         child: Container(
+          margin: EdgeInsets.symmetric(vertical: 150),
           child: Form(
             key: _formkey,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Image.asset(
-                  "images/above1.png",
-                  width: MediaQuery.of(context).size.width,
-                  height: MediaQuery.of(context).size.height / 2.9,
-                  fit: BoxFit.cover,
-                ),
+                // Image.asset(
+                //   "images/redoval.png",
+                //   width: MediaQuery.of(context).size.width,
+                //   height: MediaQuery.of(context).size.height / 2.9,
+                //   fit: BoxFit.cover,
+                // ),
                 const Padding(
                   padding: EdgeInsets.only(left: 20.0),
                   child: Text(
@@ -206,12 +207,12 @@ class _LogInState extends State<LogIn> {
                     alignment: Alignment.bottomRight,
                     child: const Text(
                       "Forgot password?",
-                      style: TextStyle(color: Colors.white, fontSize: 18.0),
+                      style: TextStyle(color: Color(0xFFf95f3b), fontSize: 18.0,fontWeight: FontWeight.bold),
                     ),
                   ),
                 ),
                 const SizedBox(
-                  height: 30.0,
+                  height: 80.0,
                 ),
                 GestureDetector(
                   onTap: () {
@@ -225,8 +226,8 @@ class _LogInState extends State<LogIn> {
                   },
                   child: Center(
                     child: Container(
-                      width: 150,
-                      height: 55,
+                      width: 120,
+                      height: 40,
                       padding: const EdgeInsets.all(10),
                       decoration: BoxDecoration(
                           color: const Color(0xFFf95f3b),
@@ -236,14 +237,14 @@ class _LogInState extends State<LogIn> {
                             "Login",
                             style: TextStyle(
                                 color: Colors.white,
-                                fontSize: 20.0,
+                                fontSize: 15.0,
                                 fontWeight: FontWeight.bold),
                           )),
                     ),
                   ),
                 ),
                 const SizedBox(
-                  height: 40.0,
+                  height: 25.0,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
